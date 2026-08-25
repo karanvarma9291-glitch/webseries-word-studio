@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karanvarma9291-glitch.github.io/webseries-word-studio/sitemap.xml
