@@ -35,7 +35,101 @@ h1{font-size:42px}
 </head>
 
 <body>
+<div id="age-warning">
+  <div id="age-warning" style="
+position:fixed;
+inset:0;
+z-index:99999;
+background:#000;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+font-family:Arial,sans-serif;
+padding:20px;
+">
+  <div style="
+  max-width:450px;
+  width:100%;
+  border:2px solid #e8b83f;
+  border-radius:18px;
+  padding:30px 20px;
+  background:#111;
+  box-shadow:0 0 30px rgba(232,184,63,.35);
+  ">
+    
+    <div style="font-size:60px;">🔞</div>
 
+    <h2 style="color:#e8b83f;font-size:30px;margin:15px 0;">
+      18+ चेतावनी
+    </h2>
+
+    <p style="font-size:18px;line-height:1.6;">
+      यह वेबसाइट केवल 18 वर्ष या उससे अधिक उम्र के वयस्कों के लिए है।
+    </p>
+
+    <p style="color:#ccc;line-height:1.5;">
+      आगे बढ़ने से पहले पुष्टि करें कि आपकी उम्र 18 वर्ष या उससे अधिक है।
+    </p>
+
+    <button onclick="enterSite()" style="
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:0;
+    border-radius:10px;
+    background:#e8b83f;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    ">
+      ✅ मैं 18+ हूँ — प्रवेश करें
+    </button>
+
+    <button onclick="leaveSite()" style="
+    width:100%;
+    padding:15px;
+    margin-top:12px;
+    border:1px solid #777;
+    border-radius:10px;
+    background:#222;
+    color:#fff;
+    font-size:17px;
+    ">
+      ❌ मैं 18 से कम हूँ — बाहर निकलें
+    </button>
+
+  </div>
+</div>
+
+<script>
+function enterSite() {
+  document.getElementById("age-warning").style.display = "none";
+}
+
+function leaveSite() {
+  window.location.href = "https://www.google.com";
+}
+</script>
+  <div class="age-box">
+    <h2>🔞 18+ सामग्री</h2>
+    <p>यह वेबसाइट केवल 18 वर्ष या उससे अधिक उम्र के वयस्कों के लिए है।</p>
+    <p>आगे बढ़ने से पहले अपनी उम्र की पुष्टि करें।</p>
+    <button onclick="enterSite()">मैं 18+ हूँ — प्रवेश करें</button>
+    <button onclick="leaveSite()">बाहर निकलें</button>
+  </div>
+</div>
+
+<script>
+function enterSite() {
+  document.getElementById("age-warning").style.display = "none";
+}
+
+function leaveSite() {
+  window.location.href = "https://www.google.com";
+}
+</script>
 <header>
 <div class="logo">🎬 WEBSERIES WORD STUDIO</div>
 <nav>
